@@ -1,7 +1,6 @@
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
-cmake-build-debug
 CMakeScripts
 Testing
 Makefile
@@ -12,3 +11,4 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 .idea
+cmake-build-debug
