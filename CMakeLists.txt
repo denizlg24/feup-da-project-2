@@ -13,4 +13,10 @@ add_executable(FEUP_DA_PROJECT_2 main.cpp
         commands/Command.h
         commands/ReadFromFile.cpp
         commands/ReadFromFile.h
+        csv_parser/CSVParser.cpp
+        csv_parser/CSVParser.h
+        data_structures/TruckProblemInstance.cpp
+        data_structures/TruckProblemInstance.h
+        commands/CreateProblemInstance.cpp
+        commands/CreateProblemInstance.h
 )
