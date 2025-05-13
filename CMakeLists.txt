@@ -19,4 +19,8 @@ add_executable(FEUP_DA_PROJECT_2 main.cpp
         data_structures/TruckProblemInstance.h
         commands/CreateProblemInstance.cpp
         commands/CreateProblemInstance.h
+        algorithms/KnapsackBacktrack.cpp
+        algorithms/KnapsackBacktrack.h
+        commands/BruteForceKnapsack.cpp
+        commands/BruteForceKnapsack.h
 )
