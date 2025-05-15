@@ -63,6 +63,7 @@ void CLI::runFromFile(CommandRegistry *registry, const string &inputFile, const 
                 }
             }
             try {
+
                 registry->executeCommand(command, args);
                 cout << endl;
             } catch (const exception &e) {

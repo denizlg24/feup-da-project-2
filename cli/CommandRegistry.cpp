@@ -3,7 +3,7 @@
 //
 
 #include "CommandRegistry.h"
-
+#include <chrono>
 void CommandRegistry::registerDependency(const string &dependent, const string &dependency) {
     dependencies[dependent].push_back(dependency);
 }
@@ -36,7 +36,12 @@ void CommandRegistry::executeCommand(const string &name, const vector<string> &a
     const auto it = commands_map.find(name);
     if (it != commands_map.end()) {
         try {
+            auto start = std::chrono::high_resolution_clock::now();
             commandVector[it->second]->execute(&context, args);
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> duration = end - start;
+
+            std::cout << "[INFO] Command executed in " << duration.count() << " ms\n";
             commandState[name] = true;
         } catch (const exception &e) {
             cout << "Execution error: " << e.what() << endl;
