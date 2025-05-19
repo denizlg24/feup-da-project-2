@@ -23,4 +23,12 @@ add_executable(FEUP_DA_PROJECT_2 main.cpp
         algorithms/KnapsackBacktrack.h
         commands/BruteForceKnapsack.cpp
         commands/BruteForceKnapsack.h
+        commands/DynamicProgrammingKnapsack.cpp
+        commands/DynamicProgrammingKnapsack.h
+        algorithms/DPKnapsack.cpp
+        algorithms/DPKnapsack.h
+        algorithms/GreedyKnapsack.cpp
+        algorithms/GreedyKnapsack.h
+        commands/GreedyKnapsackCommand.cpp
+        commands/GreedyKnapsackCommand.h
 )
