@@ -31,4 +31,8 @@ add_executable(FEUP_DA_PROJECT_2 main.cpp
         algorithms/GreedyKnapsack.h
         commands/GreedyKnapsackCommand.cpp
         commands/GreedyKnapsackCommand.h
+        commands/Help.cpp
+        commands/Help.h
+        commands/TestExecutionTime.cpp
+        commands/TestExecutionTime.h
 )

@@ -23,7 +23,7 @@ void dpKnapsack(int capacity, const std::vector<int> &weights, const std::vector
     for (int i = itemCount; i > 0; --i) {
         if (dp[i][cap] != dp[i - 1][cap]) {
             int idx = i - 1;
-            selectedItems.push_back(idx);
+            selectedItems.push_back(idx+1);
             cap -= weights[idx];
         }
     }

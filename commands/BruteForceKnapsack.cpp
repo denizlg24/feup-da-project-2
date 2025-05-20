@@ -32,7 +32,7 @@ void BruteForceKnapsack::execute(Context *context, std::vector<std::string> args
         cout << "Selected items: ";
         for (int i = 0; i < n; ++i) {
             if (bestSolution[i]) {
-                cout << i << " ";
+                cout << i+1 << " ";
             }
         }
         cout << endl;
