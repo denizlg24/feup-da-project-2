@@ -4,11 +4,15 @@
 #include "commands/CreateProblemInstance.h"
 #include "commands/DynamicProgrammingKnapsack.h"
 #include "commands/GreedyKnapsackCommand.h"
+#include "commands/Help.h"
 #include "commands/ReadFromFile.h"
+#include "commands/TestExecutionTime.h"
 
 int main(int argc, char *argv[]) {
     auto *registry = new CommandRegistry();
     registry->getContext()->set("registry", registry);
+    registry->registerCommand("help", new Help());
+    registry->registerCommand("test_solution", new TestExecutionTime());
     registry->registerCommand("read_from_file", new ReadFromFile());
     registry->registerCommand("create_problem", new CreateProblemInstance());
     registry->registerCommand("brute_force", new BruteForceKnapsack());

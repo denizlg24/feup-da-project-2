@@ -5,12 +5,13 @@
 #include "GreedyKnapsack.h"
 
 #include <algorithm>
+#include <iostream>
 
 void greedyKnapsack(int capacity,
-                         const std::vector<int> &weights,
-                         const std::vector<int> &values,
-                         int &totalValue,
-                         std::vector<int> &selectedItems) {
+                    const std::vector<int> &weights,
+                    const std::vector<int> &values,
+                    int &totalValue,
+                    std::vector<int> &selectedItems) {
     int n = weights.size();
     totalValue = 0;
 
@@ -26,7 +27,7 @@ void greedyKnapsack(int capacity,
     int currentWeight = 0;
     for (int i: indices) {
         if (currentWeight + weights[i] <= capacity) {
-            selectedItems.push_back(i);
+            selectedItems.push_back(i+1);
             currentWeight += weights[i];
             totalValue += values[i];
         }

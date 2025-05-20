@@ -46,7 +46,6 @@ void CreateProblemInstance::execute(Context *context, std::vector<std::string> a
             int id = std::stoi(pallet[0]);
             int weight = std::stoi(pallet[1]);
             int profit = std::stoi(pallet[2]);
-
             instance->addPallet({id, weight, profit});
         }
 
