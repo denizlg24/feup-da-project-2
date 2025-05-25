@@ -1,0 +1,59 @@
+\doxysection{Truck\+Problem\+Instance.\+h}
+\hypertarget{_truck_problem_instance_8h_source}{}\label{_truck_problem_instance_8h_source}\index{data\_structures/TruckProblemInstance.h@{data\_structures/TruckProblemInstance.h}}
+\mbox{\hyperlink{_truck_problem_instance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ deniz\ on\ 5/9/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TRUCKPROBLEMINSTANCE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TRUCKPROBLEMINSTANCE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_pallet}{Pallet}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_pallet_a9e5a10be32ec564eeb8c62f057394cb0}{id}};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_pallet_a216a90fe257bc40e1f5412dc9627b322}{weight}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_pallet_a73f875ee2c33b680d2d4ed218636a9fc}{profit}};}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_truck_problem_instance_a453dc4b40a25ce689405995ab0792903}{TruckProblemInstance}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ capacity;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ numPallets;}
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<Pallet>\ pallets;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_truck_problem_instance_a453dc4b40a25ce689405995ab0792903}{TruckProblemInstance}}(\textcolor{keywordtype}{int}\ cap,\ \textcolor{keywordtype}{int}\ n)\ :\ capacity(cap),\ numPallets(n)\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_truck_problem_instance_a7b3a1b42a52de1079088031fb95905ec}{setCapacity}}(\textcolor{keywordtype}{int}\ cap)\ \{\ capacity\ =\ cap;\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_truck_problem_instance_a9dcca001561b575bf3bc714a41d84a57}{setNumPallets}}(\textcolor{keywordtype}{int}\ n)\ \{\ numPallets\ =\ n;\ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_truck_problem_instance_a939342815437fce79fd88304ee43b354}{addPallet}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pallet}{Pallet}}\ \&pallet)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ pallets.push\_back(pallet);}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_truck_problem_instance_a816a04dc2817ae8fe6e52bcdf8f57c2f}{getCapacity}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ capacity;\ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_truck_problem_instance_a2bdab4d76af4e00e0da52ad5cd6521cb}{getNumPallets}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ numPallets;\ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Pallet>\ \&\mbox{\hyperlink{class_truck_problem_instance_a4b2b061812f808a8bfbefa22b73cc75e}{getPallets}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ pallets;\ \}}
+\DoxyCodeLine{00081\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{class_truck_problem_instance_ac0bf822aadf18633260378966bb315aa}{getWeights}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::vector<int>\ weights;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pallet:\ pallets)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ weights.push\_back(pallet.weight);}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ weights;}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{class_truck_problem_instance_abbf8839c603bb0ffdc1a4cfdbe27a5cf}{getProfits}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ std::vector<int>\ profits;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&pallet:\ pallets)\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ profits.push\_back(pallet.profit);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ profits;}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TRUCKPROBLEMINSTANCE\_H}}
+
+\end{DoxyCode}

@@ -28,11 +28,18 @@ void BruteForceKnapsack::execute(Context *context, std::vector<std::string> args
         backtrack(weights, values, capacity, 0, 0, 0, currentSolution, maxValue, minWeight, bestSolution);
         auto end = std::chrono::high_resolution_clock::now();
         chrono::duration<double, std::milli> duration = end - start;
-        cout << "Max value: " << maxValue << endl;
+        int totalWeight = 0;
+        for (int i = 0; i < n; ++i) {
+            if (bestSolution[i]) {
+                totalWeight += weights[i];
+            }
+        }
+        cout << "Weight: " << totalWeight << endl;
+        cout << "Profit: " << maxValue << endl;
         cout << "Selected items: ";
         for (int i = 0; i < n; ++i) {
             if (bestSolution[i]) {
-                cout << i+1 << " ";
+                cout << i + 1 << " ";
             }
         }
         cout << endl;

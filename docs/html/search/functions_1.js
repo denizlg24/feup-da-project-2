@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['backtrack_0',['backtrack',['../_knapsack_backtrack_8cpp.html#aa6560b7933773caf91c276be57e031dd',1,'backtrack(const std::vector&lt; int &gt; &amp;weights, const std::vector&lt; int &gt; &amp;values, int capacity, int index, int currentWeight, int currentValue, std::vector&lt; int &gt; &amp;currentSolution, int &amp;maxValue, int &amp;minWeight, std::vector&lt; int &gt; &amp;bestSolution):&#160;KnapsackBacktrack.cpp'],['../_knapsack_backtrack_8h.html#aa6560b7933773caf91c276be57e031dd',1,'backtrack(const std::vector&lt; int &gt; &amp;weights, const std::vector&lt; int &gt; &amp;values, int capacity, int index, int currentWeight, int currentValue, std::vector&lt; int &gt; &amp;currentSolution, int &amp;maxValue, int &amp;minWeight, std::vector&lt; int &gt; &amp;bestSolution):&#160;KnapsackBacktrack.cpp']]]
+];

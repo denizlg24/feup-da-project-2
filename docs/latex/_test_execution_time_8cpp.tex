@@ -1,0 +1,39 @@
+\doxysection{commands/\+Test\+Execution\+Time.cpp File Reference}
+\hypertarget{_test_execution_time_8cpp}{}\label{_test_execution_time_8cpp}\index{commands/TestExecutionTime.cpp@{commands/TestExecutionTime.cpp}}
+{\ttfamily \#include "{}Test\+Execution\+Time.\+h"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include "{}../algorithms/\+Knapsack\+Backtrack.\+h"{}}\newline
+{\ttfamily \#include "{}../algorithms/\+DPKnapsack.\+h"{}}\newline
+{\ttfamily \#include "{}../algorithms/\+Greedy\+Knapsack.\+h"{}}\newline
+{\ttfamily \#include "{}../data\+\_\+structures/\+Truck\+Problem\+Instance.\+h"{}}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_test_execution_time_8cpp_a15ddd1f2d1ba79b5eeaec358216d926c}{test\+Backtrack}} (vector$<$ double $>$ \&times, vector$<$ int $>$ \&weights, vector$<$ int $>$ \&values, int capacity)
+\item 
+void \mbox{\hyperlink{_test_execution_time_8cpp_af56cd49d9c4b9b0135bcb224c4c0088b}{test\+DP}} (vector$<$ double $>$ \&times, vector$<$ int $>$ \&weights, vector$<$ int $>$ \&values, int capacity)
+\item 
+void \mbox{\hyperlink{_test_execution_time_8cpp_a9f2eabc088cba8f81db3706b3ac87a1f}{test\+Greedy}} (vector$<$ double $>$ \&times, vector$<$ int $>$ \&weights, vector$<$ int $>$ \&values, int capacity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_test_execution_time_8cpp_a15ddd1f2d1ba79b5eeaec358216d926c}\index{TestExecutionTime.cpp@{TestExecutionTime.cpp}!testBacktrack@{testBacktrack}}
+\index{testBacktrack@{testBacktrack}!TestExecutionTime.cpp@{TestExecutionTime.cpp}}
+\doxysubsubsection{\texorpdfstring{testBacktrack()}{testBacktrack()}}
+{\footnotesize\ttfamily \label{_test_execution_time_8cpp_a15ddd1f2d1ba79b5eeaec358216d926c} 
+void test\+Backtrack (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ \&}]{times}{, }\item[{vector$<$ int $>$ \&}]{weights}{, }\item[{vector$<$ int $>$ \&}]{values}{, }\item[{int}]{capacity}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test_execution_time_8cpp_af56cd49d9c4b9b0135bcb224c4c0088b}\index{TestExecutionTime.cpp@{TestExecutionTime.cpp}!testDP@{testDP}}
+\index{testDP@{testDP}!TestExecutionTime.cpp@{TestExecutionTime.cpp}}
+\doxysubsubsection{\texorpdfstring{testDP()}{testDP()}}
+{\footnotesize\ttfamily \label{_test_execution_time_8cpp_af56cd49d9c4b9b0135bcb224c4c0088b} 
+void test\+DP (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ \&}]{times}{, }\item[{vector$<$ int $>$ \&}]{weights}{, }\item[{vector$<$ int $>$ \&}]{values}{, }\item[{int}]{capacity}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_test_execution_time_8cpp_a9f2eabc088cba8f81db3706b3ac87a1f}\index{TestExecutionTime.cpp@{TestExecutionTime.cpp}!testGreedy@{testGreedy}}
+\index{testGreedy@{testGreedy}!TestExecutionTime.cpp@{TestExecutionTime.cpp}}
+\doxysubsubsection{\texorpdfstring{testGreedy()}{testGreedy()}}
+{\footnotesize\ttfamily \label{_test_execution_time_8cpp_a9f2eabc088cba8f81db3706b3ac87a1f} 
+void test\+Greedy (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ \&}]{times}{, }\item[{vector$<$ int $>$ \&}]{weights}{, }\item[{vector$<$ int $>$ \&}]{values}{, }\item[{int}]{capacity}{}\end{DoxyParamCaption})}
+

@@ -1,0 +1,175 @@
+\doxysection{Truck\+Problem\+Instance Class Reference}
+\hypertarget{class_truck_problem_instance}{}\label{class_truck_problem_instance}\index{TruckProblemInstance@{TruckProblemInstance}}
+
+
+Encapsulates a truck loading problem instance with pallets, capacity, and related data.  
+
+
+
+
+{\ttfamily \#include $<$Truck\+Problem\+Instance.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_truck_problem_instance_a453dc4b40a25ce689405995ab0792903}{Truck\+Problem\+Instance}} (int cap, int n)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_truck_problem_instance}{Truck\+Problem\+Instance} with specified capacity and number of pallets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_truck_problem_instance_a7b3a1b42a52de1079088031fb95905ec}{set\+Capacity}} (int cap)
+\begin{DoxyCompactList}\small\item\em Sets the truck capacity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_truck_problem_instance_a9dcca001561b575bf3bc714a41d84a57}{set\+Num\+Pallets}} (int n)
+\begin{DoxyCompactList}\small\item\em Sets the number of pallets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_truck_problem_instance_a939342815437fce79fd88304ee43b354}{add\+Pallet}} (const \mbox{\hyperlink{struct_pallet}{Pallet}} \&pallet)
+\begin{DoxyCompactList}\small\item\em Adds a pallet to the instance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_truck_problem_instance_a816a04dc2817ae8fe6e52bcdf8f57c2f}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Returns the truck\textquotesingle{}s capacity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_truck_problem_instance_a2bdab4d76af4e00e0da52ad5cd6521cb}{get\+Num\+Pallets}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of pallets. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{struct_pallet}{Pallet}} $>$ \& \mbox{\hyperlink{class_truck_problem_instance_a4b2b061812f808a8bfbefa22b73cc75e}{get\+Pallets}} () const
+\begin{DoxyCompactList}\small\item\em Returns a constant reference to the vector of pallets. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_truck_problem_instance_ac0bf822aadf18633260378966bb315aa}{get\+Weights}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the weights of all pallets as a vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_truck_problem_instance_abbf8839c603bb0ffdc1a4cfdbe27a5cf}{get\+Profits}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the profits of all pallets as a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates a truck loading problem instance with pallets, capacity, and related data. 
+
+This class manages the data related to a truck loading optimization problem, including the truck\textquotesingle{}s capacity, the number of pallets, and the pallets themselves. It provides methods to add pallets, set/get the capacity and number of pallets, and retrieve vectors of weights and profits for use in optimization algorithms. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_truck_problem_instance_a453dc4b40a25ce689405995ab0792903}\index{TruckProblemInstance@{TruckProblemInstance}!TruckProblemInstance@{TruckProblemInstance}}
+\index{TruckProblemInstance@{TruckProblemInstance}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{TruckProblemInstance()}{TruckProblemInstance()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a453dc4b40a25ce689405995ab0792903} 
+Truck\+Problem\+Instance\+::\+Truck\+Problem\+Instance (\begin{DoxyParamCaption}\item[{int}]{cap}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new \doxylink{class_truck_problem_instance}{Truck\+Problem\+Instance} with specified capacity and number of pallets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The truck\textquotesingle{}s maximum capacity. \\
+\hline
+{\em n} & The number of pallets. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_truck_problem_instance_a939342815437fce79fd88304ee43b354}\index{TruckProblemInstance@{TruckProblemInstance}!addPallet@{addPallet}}
+\index{addPallet@{addPallet}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{addPallet()}{addPallet()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a939342815437fce79fd88304ee43b354} 
+void Truck\+Problem\+Instance\+::add\+Pallet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_pallet}{Pallet}} \&}]{pallet}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a pallet to the instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pallet} & The pallet to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_truck_problem_instance_a816a04dc2817ae8fe6e52bcdf8f57c2f}\index{TruckProblemInstance@{TruckProblemInstance}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a816a04dc2817ae8fe6e52bcdf8f57c2f} 
+int Truck\+Problem\+Instance\+::get\+Capacity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the truck\textquotesingle{}s capacity. 
+
+\begin{DoxyReturn}{Returns}
+The current capacity. 
+\end{DoxyReturn}
+\Hypertarget{class_truck_problem_instance_a2bdab4d76af4e00e0da52ad5cd6521cb}\index{TruckProblemInstance@{TruckProblemInstance}!getNumPallets@{getNumPallets}}
+\index{getNumPallets@{getNumPallets}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{getNumPallets()}{getNumPallets()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a2bdab4d76af4e00e0da52ad5cd6521cb} 
+int Truck\+Problem\+Instance\+::get\+Num\+Pallets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of pallets. 
+
+\begin{DoxyReturn}{Returns}
+The number of pallets. 
+\end{DoxyReturn}
+\Hypertarget{class_truck_problem_instance_a4b2b061812f808a8bfbefa22b73cc75e}\index{TruckProblemInstance@{TruckProblemInstance}!getPallets@{getPallets}}
+\index{getPallets@{getPallets}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{getPallets()}{getPallets()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a4b2b061812f808a8bfbefa22b73cc75e} 
+const std\+::vector$<$ \mbox{\hyperlink{struct_pallet}{Pallet}} $>$ \& Truck\+Problem\+Instance\+::get\+Pallets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a constant reference to the vector of pallets. 
+
+\begin{DoxyReturn}{Returns}
+The vector of pallets. 
+\end{DoxyReturn}
+\Hypertarget{class_truck_problem_instance_abbf8839c603bb0ffdc1a4cfdbe27a5cf}\index{TruckProblemInstance@{TruckProblemInstance}!getProfits@{getProfits}}
+\index{getProfits@{getProfits}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{getProfits()}{getProfits()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_abbf8839c603bb0ffdc1a4cfdbe27a5cf} 
+std\+::vector$<$ int $>$ Truck\+Problem\+Instance\+::get\+Profits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the profits of all pallets as a vector. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the profits of each pallet. 
+\end{DoxyReturn}
+\Hypertarget{class_truck_problem_instance_ac0bf822aadf18633260378966bb315aa}\index{TruckProblemInstance@{TruckProblemInstance}!getWeights@{getWeights}}
+\index{getWeights@{getWeights}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{getWeights()}{getWeights()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_ac0bf822aadf18633260378966bb315aa} 
+std\+::vector$<$ int $>$ Truck\+Problem\+Instance\+::get\+Weights (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the weights of all pallets as a vector. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the weights of each pallet. 
+\end{DoxyReturn}
+\Hypertarget{class_truck_problem_instance_a7b3a1b42a52de1079088031fb95905ec}\index{TruckProblemInstance@{TruckProblemInstance}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a7b3a1b42a52de1079088031fb95905ec} 
+void Truck\+Problem\+Instance\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{cap}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the truck capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & New capacity value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_truck_problem_instance_a9dcca001561b575bf3bc714a41d84a57}\index{TruckProblemInstance@{TruckProblemInstance}!setNumPallets@{setNumPallets}}
+\index{setNumPallets@{setNumPallets}!TruckProblemInstance@{TruckProblemInstance}}
+\doxysubsubsection{\texorpdfstring{setNumPallets()}{setNumPallets()}}
+{\footnotesize\ttfamily \label{class_truck_problem_instance_a9dcca001561b575bf3bc714a41d84a57} 
+void Truck\+Problem\+Instance\+::set\+Num\+Pallets (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the number of pallets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & New number of pallets. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+data\+\_\+structures/\mbox{\hyperlink{_truck_problem_instance_8h}{Truck\+Problem\+Instance.\+h}}\end{DoxyCompactItemize}

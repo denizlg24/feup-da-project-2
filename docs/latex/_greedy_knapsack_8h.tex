@@ -1,0 +1,34 @@
+\doxysection{algorithms/\+Greedy\+Knapsack.h File Reference}
+\hypertarget{_greedy_knapsack_8h}{}\label{_greedy_knapsack_8h}\index{algorithms/GreedyKnapsack.h@{algorithms/GreedyKnapsack.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_greedy_knapsack_8h_a68d5999a159f95fe6327d1c963af7a9d}{greedy\+Knapsack}} (int capacity, const std\+::vector$<$ int $>$ \&weights, const std\+::vector$<$ int $>$ \&values, int \&total\+Value, std\+::vector$<$ int $>$ \&selected\+Items)
+\begin{DoxyCompactList}\small\item\em Solves the fractional Knapsack problem using a greedy approach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_greedy_knapsack_8h_a68d5999a159f95fe6327d1c963af7a9d}\index{GreedyKnapsack.h@{GreedyKnapsack.h}!greedyKnapsack@{greedyKnapsack}}
+\index{greedyKnapsack@{greedyKnapsack}!GreedyKnapsack.h@{GreedyKnapsack.h}}
+\doxysubsubsection{\texorpdfstring{greedyKnapsack()}{greedyKnapsack()}}
+{\footnotesize\ttfamily \label{_greedy_knapsack_8h_a68d5999a159f95fe6327d1c963af7a9d} 
+void greedy\+Knapsack (\begin{DoxyParamCaption}\item[{int}]{capacity}{, }\item[{const std\+::vector$<$ int $>$ \&}]{weights}{, }\item[{const std\+::vector$<$ int $>$ \&}]{values}{, }\item[{int \&}]{total\+Value}{, }\item[{std\+::vector$<$ int $>$ \&}]{selected\+Items}{}\end{DoxyParamCaption})}
+
+
+
+Solves the fractional Knapsack problem using a greedy approach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The maximum weight capacity of the knapsack. \\
+\hline
+{\em weights} & A vector containing the weights of the items. \\
+\hline
+{\em values} & A vector containing the values of the items. \\
+\hline
+{\em total\+Value} & Reference to an integer where the total value of the selected items will be stored. \\
+\hline
+{\em selected\+Items} & Reference to a vector where the indices of selected items will be stored. \\
+\hline
+\end{DoxyParams}

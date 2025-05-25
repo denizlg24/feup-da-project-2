@@ -1,0 +1,41 @@
+\doxysection{Command\+Registry.\+h}
+\hypertarget{_command_registry_8h_source}{}\label{_command_registry_8h_source}\index{cli/CommandRegistry.h@{cli/CommandRegistry.h}}
+\mbox{\hyperlink{_command_registry_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ deniz\ on\ 3/18/2025.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ COMMANDREGISTRY\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ COMMANDREGISTRY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_context_8h}{../context/Context.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_command_8h}{../commands/Command.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_command_registry}{CommandRegistry}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_command_registry_aad81bc8259b04c12e43fb5cc913ebc0a}{registerCommand}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name,\ \mbox{\hyperlink{class_command}{Command}}*\ command);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \ \ \ \ unordered\_map<string,int>\ \mbox{\hyperlink{class_command_registry_a2b4c7bc3769f01a17030279a07bfaf82}{getCommands}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_command}{Command}}*\ \mbox{\hyperlink{class_command_registry_a6d6679baf5a8db8751d9c0cb91478231}{getCommand}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_command_registry_a1ef876c4e357513c05d9632a5ddb9909}{registerDependency}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&dependent,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&dependency);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_command_registry_af6caa11ec6cfa22aba86c9853cb4d348}{executeCommand}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\ \textcolor{keyword}{const}\ vector<string>\&\ args);}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_context}{Context}}\ *\ \mbox{\hyperlink{class_command_registry_a4fee0c04ce844bfee3582a8132ed4ae4}{getContext}}();}
+\DoxyCodeLine{00043\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00044\ \ \ \ \ pmr::vector<Command*>\ \mbox{\hyperlink{class_command_registry_ae54b60114328dfdca2e4099a43e333ee}{commandVector}};}
+\DoxyCodeLine{00045\ \ \ \ \ unordered\_map<string,\ int>\ \mbox{\hyperlink{class_command_registry_a9634d059c81db8e96cd1d52caf8a3ad4}{commands\_map}};}
+\DoxyCodeLine{00046\ \ \ \ \ unordered\_map<string,\ bool>\ \mbox{\hyperlink{class_command_registry_ad5430836d6b3c08ac79fefd6ab21abdc}{commandState}};}
+\DoxyCodeLine{00047\ \ \ \ \ unordered\_map<string,vector<string>>\ \mbox{\hyperlink{class_command_registry_aea56d3135af2aed7e2f0ac2e2f55823d}{dependencies}};}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_context}{Context}}\ \mbox{\hyperlink{class_command_registry_a1851c53ae1d172cb50777a897ea3cd46}{context}};}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//COMMANDREGISTRY\_H}}
+
+\end{DoxyCode}

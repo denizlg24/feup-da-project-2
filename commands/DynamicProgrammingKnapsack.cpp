@@ -23,7 +23,12 @@ void DynamicProgrammingKnapsack::execute(Context *context, std::vector<std::stri
         dpKnapsack(capacity, weights, values, bestValue, selectedItems);
         auto end = std::chrono::high_resolution_clock::now();
         chrono::duration<double, std::milli> duration = end - start;
-        cout << "Max value: " << bestValue << endl;
+        int totalWeight = 0;
+        for (auto item: selectedItems) {
+            totalWeight += weights[item - 1];
+        }
+        cout << "Weight: " << totalWeight << endl;
+        cout << "Profit: " << bestValue << endl;
         cout << "Selected items: ";
         for (auto item: selectedItems) {
             cout << item << " ";

@@ -1,0 +1,44 @@
+\doxysection{algorithms/\+Knapsack\+Backtrack.cpp File Reference}
+\hypertarget{_knapsack_backtrack_8cpp}{}\label{_knapsack_backtrack_8cpp}\index{algorithms/KnapsackBacktrack.cpp@{algorithms/KnapsackBacktrack.cpp}}
+{\ttfamily \#include "{}Knapsack\+Backtrack.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_knapsack_backtrack_8cpp_aa6560b7933773caf91c276be57e031dd}{backtrack}} (const std\+::vector$<$ int $>$ \&weights, const std\+::vector$<$ int $>$ \&values, int capacity, int index, int current\+Weight, int current\+Value, std\+::vector$<$ int $>$ \&current\+Solution, int \&max\+Value, int \&min\+Weight, std\+::vector$<$ int $>$ \&best\+Solution)
+\begin{DoxyCompactList}\small\item\em Solves the 0/1 Knapsack problem using a backtracking approach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_knapsack_backtrack_8cpp_aa6560b7933773caf91c276be57e031dd}\index{KnapsackBacktrack.cpp@{KnapsackBacktrack.cpp}!backtrack@{backtrack}}
+\index{backtrack@{backtrack}!KnapsackBacktrack.cpp@{KnapsackBacktrack.cpp}}
+\doxysubsubsection{\texorpdfstring{backtrack()}{backtrack()}}
+{\footnotesize\ttfamily \label{_knapsack_backtrack_8cpp_aa6560b7933773caf91c276be57e031dd} 
+void backtrack (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{weights}{, }\item[{const std\+::vector$<$ int $>$ \&}]{values}{, }\item[{int}]{capacity}{, }\item[{int}]{index}{, }\item[{int}]{current\+Weight}{, }\item[{int}]{current\+Value}{, }\item[{std\+::vector$<$ int $>$ \&}]{current\+Solution}{, }\item[{int \&}]{max\+Value}{, }\item[{int \&}]{min\+Weight}{, }\item[{std\+::vector$<$ int $>$ \&}]{best\+Solution}{}\end{DoxyParamCaption})}
+
+
+
+Solves the 0/1 Knapsack problem using a backtracking approach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weights} & A vector containing the weights of the items. \\
+\hline
+{\em values} & A vector containing the values of the items. \\
+\hline
+{\em capacity} & The maximum weight capacity of the knapsack. \\
+\hline
+{\em index} & The current item index being considered. \\
+\hline
+{\em current\+Weight} & The total weight of the currently selected items. \\
+\hline
+{\em current\+Value} & The total value of the currently selected items. \\
+\hline
+{\em current\+Solution} & A vector representing the current selection of items (by indices). \\
+\hline
+{\em max\+Value} & Reference to an integer storing the best (maximum) value found so far. \\
+\hline
+{\em min\+Weight} & Reference to an integer storing the weight of the best-\/value solution (used for tie-\/breaking). \\
+\hline
+{\em best\+Solution} & Reference to a vector storing the best item selection found. \\
+\hline
+\end{DoxyParams}
